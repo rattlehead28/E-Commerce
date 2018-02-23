@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>E-Cart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/mobiles.css">
+    <link rel="stylesheet" href="assets/css/mobileDetails.css">
+    <link rel="stylesheet" href="assets/css/sports.css">
+    <link rel="stylesheet" href="assets/css/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angularjs-slider/6.4.3/rzslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+    <script src="https://rawgit.com/rzajac/angularjs-slider/master/dist/rzslider.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/service/mainService.js"></script>
+    <script src="scripts/controllers/mainController.js"></script>
+    <script src="scripts/controllers/homeController.js"></script>
+    <script src="scripts/controllers/mobileController.js"></script>
+    <script src="scripts/controllers/sportsController.js"></script>
+    <script src="scripts/controllers/fashionController.js"></script>
+    <script src="scripts/controllers/mobileDetails.controller.js"></script>
+    <script src="scripts/controllers/fashionDetails.controller.js"></script>
+    <script src="scripts/controllers/cart.controller.js"></script>
+    <script src="scripts/controllers/sportsDetails.controller.js"></script>
+</head>
+
+<body ng-app="eCart" ng-controller="mainCtrl">
+    <!-- <header>
+        <nav class="navbar navbar-inverse navbarColor">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-6 col-xs-6">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle navbarToggle" data-toggle="collapse" data-target="#navBar" style="float: left">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#"><img class="logo" src="assets/img/logo.png"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 pull-right">
+                        <a ui-sref="cart"><span class="glyphicon glyphicon-shopping-cart cartIcon"></span></a>
+                    </div>
+                </div>
+                
+            </div>
+        </nav>
+    </header> -->
+    <!-- <nav class="navbar navbar-inverse navbarColor">
+  
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle toggleButton" data-toggle="collapse" data-target="#navBar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"><img class="logo" src="assets/img/logo.png" style="height:20px;width:20px"></a>
+    </div> -->
+    <!-- <div class="collapse navbar-collapse" id="myNavbar"> -->
+    <!-- <ul class="nav navbar-nav pull-right">
+        
+        <li><a ui-sref="cart"><span class="glyphicon glyphicon-shopping-cart"></span> </a></li>
+      </ul> -->
+    <!-- </div> -->
+    <!-- </nav> -->
+    <nav class="navbar navbar-fixed-top navbarColor">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle toggleButton" data-toggle="collapse" data-target="#navBar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img class="logo" src="assets/img/logo.png"></a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a ui-sref="cart"><span class="glyphicon glyphicon-shopping-cart cartIcon" style="font-size:30px"></a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid uiViewPadding" ui-view>
+    </div>
+    <!-- Footer -->
+    <footer class="pageFooter">
+        <div class="row">
+            <div class="col-md-3 col-sm-3 col-xs-6">
+                <div class="footer-text footer-textHeading">Online Shopping</div>
+                <ul class="list-group">
+                    <li class="list-group-item list-format"><a ui-sref="mobile" class="footer-text">Mobiles</a></li>
+                    <li class="list-group-item list-format"><a ui-sref="sports" class="footer-text">Sports</a></li>
+                    <li class="list-group-item list-format"><a ui-sref="fashion" class="footer-text">Fashion</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6 footerDiv">
+                <div class="footer-text footer-textHeading">Useful Links</div>
+                <ul class="list-group">
+                    <li class="list-group-item list-format"><a href="#" class="footer-text">Contact Us</a></li>
+                    <li class="list-group-item list-format"><a href="#" class="footer-text">About</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6">
+                <div class="footer-textHeading">Keep in Touch</div>
+                <a target="_blank" title="find us on Facebook" href="http://www.facebook.com/PLACEHOLDER"><img alt="follow me on facebook" src="//login.create.net/images/icons/user/facebook_30x30.png" border=0></a>
+                <a target="_blank" title="follow me on twitter" href="http://www.twitter.com/PLACEHOLDER"><img alt="follow me on twitter" src="//login.create.net/images/icons/user/twitter_30x30.png" border=0></a>
+                <a target="_blank" title="follow me on youtube" href="http://www.youtube.com/PLACEHOLDER"><img alt="follow me on youtube" src="https://c866088.ssl.cf3.rackcdn.com/assets/youtube40x40.png" border=0></a>
+                <a target="_blank" title="follow me on instagram" href="http://www.instagram.com/PLACEHOLDER"><img alt="follow me on instagram" src="https://c866088.ssl.cf3.rackcdn.com/assets/instagram30x30.png" border=0></a>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <img src="assets/img/original1.png" class="footerServicesImages" />
+                    </div>
+                    <div class="col-md-8 col-xs-8">
+                        <div class="footerServicesText footer-text"><b>100% ORIGINAL</b> guarantee for all products</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <img src="assets/img/return.png" class="footerServicesImages" />
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-xs-8">
+                        <div class="footerServicesText footer-text"><b>Return within 30 Days</b> of placing your order</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <img src="assets/img/fastDelivery.png" class="footerServicesImages" />
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-xs-8">
+                        <div class="footerServicesText footer-text"><b>Fast Delivery</b> for members</div>
+                    </div>
+                </div>
+            </div>
+    </footer>
+</body>
+
+</html>

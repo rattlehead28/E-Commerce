@@ -1,0 +1,288 @@
+<div class="form-group">
+    <div class="row">
+        <div class="col-md-4">
+            <label for="sel">Select Category</label>
+            <select class="form-control" ng-model="category">
+                <option>Mobiles</option>
+                <option>Laptops</option>
+                <option>Speakers</option>
+                <option>Headphones</option>
+                <option>Televisions</option>
+            </select>
+        </div>
+    </div>
+    <!-- MOBILE FORM -->
+    <div ng-show="category=='Mobiles'">
+        <div class="form-group">
+            <div class="row">
+                <div class="col-md-5">
+                    <label for="text">Mobile Name</label>
+                    <input class="form-control" type="text" placeholder="Mobile Name" name="" ng-model="mob.name"/>
+                </div>
+                <div class="col-md-5">
+                    <label for="number">Price</label>
+                    <input class="form-control" type="number" placeholder="Price" name="" ng-model="mob.price"/>
+                </div>
+            </div>
+            <hr/>
+            <label>Specifications :</label>
+            <br>
+            <div class="row">
+                <div class="col-md-4">
+                    <label>Operating System</label>
+                    <input class="form-control" placeholder="Operating System" name="" ng-model="mob.os"/>
+                </div>
+                <div class="col-md-4">
+                    <label>Processor</label>
+                    <input class="form-control" placeholder="Processor" name="" ng-model="mob.processor"/>
+                </div>
+                <div class="col-md-4">
+                    <label>Memory</label>
+                    <input class="form-control" placeholder="Memory" name="" ng-model="mob.memory"/>
+                </div>
+                <div class="col-md-4">
+                    <label>Camera</label>
+                    <input class="form-control" placeholder="Camera" name="" ng-model="mob.camera"/>
+                </div>
+                <div class="col-md-4">
+                    <label>Color</label>
+                    <input class="form-control" placeholder="Color" name="" ng-model="mob.color"/>
+                </div>
+                <div class="col-md-4">
+                    <label>Weight</label>
+                    <input class="form-control" type="number" placeholder="Weight" name="" ng-model="mob.weight"/>
+                </div>
+            </div>
+            <hr/>
+            <div class="row">
+                <div class="col-md-6">
+                    <label>Description</label>
+                    <textarea class="form-control" rows="5" id="comment" placeholder="Description...." ng-model="mob.description"></textarea>
+                </div>
+                <div class="col-md-4" style="padding-top:50px">
+                    <input class="text-center" type="file" />
+                    <button class="btn btn-default" style="position:relative;top:20px" ng-click="submitData()">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- LAPTOP FORM -->
+    <div ng-show="category=='Laptops'">
+        <div class="form-group">
+            <div class="row">
+                <div class="col-md-5">
+                    <label for="text">Laptop Name</label>
+                    <input class="form-control" type="text" placeholder="Laptop Name" name="" />
+                </div>
+                <div class="col-md-5">
+                    <label for="number">Price</label>
+                    <input class="form-control" type="number" placeholder="Price" name="" />
+                </div>
+            </div>
+            <hr/>
+            <label>Specifications :</label>
+            <br>
+            <div class="row">
+                <div class="col-md-4">
+                    <label>Operating System</label>
+                    <input class="form-control" placeholder="Operating System" name="" />
+                </div>
+                <div class="col-md-4">
+                    <label>Processor</label>
+                    <input class="form-control" placeholder="Processor" name="" />
+                </div>
+                <div class="col-md-4">
+                    <label>Memory</label>
+                    <input class="form-control" placeholder="Memory" name="" />
+                </div>
+                <div class="col-md-4">
+                    <label>Camera</label>
+                    <input class="form-control" placeholder="Camera" name="" />
+                </div>
+                <div class="col-md-4">
+                    <label>Color</label>
+                    <input class="form-control" placeholder="Color" name="" />
+                </div>
+                <div class="col-md-4">
+                    <label>Weight</label>
+                    <input class="form-control" type="number" placeholder="Weight" name="" />
+                </div>
+            </div><hr/>
+            <div class="row">
+                <div class="col-md-6">
+                    <label>Description</label>
+                    <textarea class="form-control" rows="5" id="comment" placeholder="Description...."></textarea>
+                </div>
+                <div class="col-md-4" style="padding-top:50px">
+                    <input class="text-center" type="file" />
+                    <button class="btn btn-default" style="position:relative;top:20px">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- TELEVISION -->
+    <div ng-show="category=='Televisions'">
+        <div class="form-group">
+            <div class="row">
+                <div class="col-md-5">
+                    <label for="text">Television Name</label>
+                    <input class="form-control" type="text" placeholder="Television Name" name="" />
+                </div>
+                <div class="col-md-5">
+                    <label for="number">Price</label>
+                    <input class="form-control" type="number" placeholder="Price" name="" />
+                </div>
+            </div>
+            <hr/>
+            <label>Specifications :</label>
+            <br>
+            <div class="row">
+                <div class="col-md-4">
+                    <label>Screen Type</label>
+                    <input class="form-control" placeholder="Screen Type" name="" />
+                </div>
+                <div class="col-md-4">
+                    <label>Display Size</label>
+                    <input class="form-control" placeholder="Display Size" name="" />
+                </div>
+                <div class="col-md-4">
+                    <label>Display Resolution</label>
+                    <input class="form-control" placeholder="Display Resolution" name="" />
+                </div>
+                <div class="col-md-4">
+                    <label>HDMI Ports</label>
+                    <input class="form-control" type="number" placeholder="HDMI Ports" name="" />
+                </div>
+                <div class="col-md-4">
+                    <label>USB Ports</label>
+                    <input class="form-control" type="number" placeholder="Color" name="" />
+                </div>
+                <div class="col-md-4">
+                    <label>Weight</label>
+                    <input class="form-control" type="number" placeholder="Weight" name="" />
+                </div>
+            </div><hr/>
+            <div class="row">
+                <div class="col-md-6">
+                    <label>Description</label>
+                    <textarea class="form-control" rows="5" id="comment" placeholder="Description...."></textarea>
+                </div>
+                <div class="col-md-4" style="padding-top:50px">
+                    <input class="text-center" type="file" />
+                    <button class="btn btn-default" style="position:relative;top:20px">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADPHONES -->
+
+    <div ng-show="category=='Headphones'">
+        <div class="form-group">
+            <div class="row">
+                <div class="col-md-5">
+                    <label for="text">Headphone Name</label>
+                    <input class="form-control" type="text" placeholder="Headphone Name" name="" />
+                </div>
+                <div class="col-md-5">
+                    <label for="number">Price</label>
+                    <input class="form-control" type="number" placeholder="Price" name="" />
+                </div>
+            </div>
+            <hr/>
+            <label>Specifications :</label>
+            <br>
+            <div class="row">
+                <div class="col-md-4">
+                    <label>Color</label>
+                    <input class="form-control" type="text" placeholder="Color" name="" />
+                </div>
+                <div class="col-md-4">
+                    <label>Type</label>
+                    <input class="form-control" type="text" placeholder="Type" name="" />
+                </div>
+                <div class="col-md-4">
+                    <label>Connectivity</label>
+                    <input class="form-control" placeholder="Connectivity" name="" />
+                </div>
+                <div class="col-md-4">
+                    <label>Sensitivity</label>
+                    <input class="form-control" placeholder="Sensitivity" name="" />
+                </div>
+                <div class="col-md-4">
+                    <label>Impedance</label>
+                    <input class="form-control" placeholder="Impedance" name="" />
+                </div>
+                <div class="col-md-4">
+                    <label>Weight</label>
+                    <input class="form-control" type="number" placeholder="Weight" name="" />
+                </div>
+            </div><hr/>
+            <div class="row">
+                <div class="col-md-6">
+                    <label>Description</label>
+                    <textarea class="form-control" rows="5" id="comment" placeholder="Description...."></textarea>
+                </div>
+                <div class="col-md-4" style="padding-top:50px">
+                    <input class="text-center" type="file" />
+                    <button class="btn btn-default" style="position:relative;top:20px">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SPEAKERS -->
+
+    <div ng-show="category=='Speakers'">
+        <div class="form-group">
+            <div class="row">
+                <div class="col-md-5">
+                    <label for="text">Speaker Name</label>
+                    <input class="form-control" type="text" placeholder="Speaker Name" name="" />
+                </div>
+                <div class="col-md-5">
+                    <label for="number">Price</label>
+                    <input class="form-control" type="number" placeholder="Price" name="" />
+                </div>
+            </div>
+            <hr/>
+            <label>Specifications :</label>
+            <br>
+            <div class="row">
+                <div class="col-md-4">
+                    <label>Color</label>
+                    <input class="form-control" type="text" placeholder="Color" name="" />
+                </div>
+                <div class="col-md-4">
+                    <label>Type</label>
+                    <input class="form-control" type="text" placeholder="Type" name="" />
+                </div>
+                <div class="col-md-4">
+                    <label>Connectivity</label>
+                    <input class="form-control" placeholder="Connectivity" name="" />
+                </div>
+                <div class="col-md-4">
+                    <label>Power Source</label>
+                    <input class="form-control" placeholder="Power Source" name="" />
+                </div>
+                <div class="col-md-4">
+                    <label>Impedance</label>
+                    <input class="form-control" placeholder="Impedance" name="" />
+                </div>
+                <div class="col-md-4">
+                    <label>Configuration</label>
+                    <input class="form-control" type="number" placeholder="Configuration" name="" />
+                </div>
+            </div><hr/>
+            <div class="row">
+                <div class="col-md-6">
+                    <label>Description</label>
+                    <textarea class="form-control" rows="5" id="comment" placeholder="Description...."></textarea>
+                </div>
+                <div class="col-md-4" style="padding-top:50px">
+                    <input class="text-center" type="file" />
+                    <button class="btn btn-default" style="position:relative;top:20px">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>

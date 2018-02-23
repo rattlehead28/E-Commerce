@@ -1,0 +1,228 @@
+<div class="row">
+    <div class="col-md-2">
+        <div class="collapse navbar-collapse" id="navBar">
+            <ul class="nav navbar">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a ui-sref="mobile">Mobiles</a></li>
+                <li><a ui-sref="sports">Sports</a></li>
+                <li class="dropdown"><a ui-sref="fashion">Fashion</a>
+                    <ul class="dropdown-menu">
+                        <li><a ui-sref="speaker">Men</a></li>
+                        <li><a ui-sref="headphone">Women</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- ========================
+          CAROUSEL
+    ===========================-->
+    <div class="col-md-10">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators" style="text-align: right">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="assets/img/carousel1.jpg" alt="" style="height:100%;width: 100%">
+                </div>
+                <div class="item">
+                    <img src="assets/img/carousel2.jpg" alt="" style="height:100%;width: 100%">
+                </div>
+                <!-- <div class="item">
+                    <img src="images/carousel3.jpg" alt="" style="height:300px;width: 100%">
+                </div> -->
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                 <span class="glyphicon glyphicon-chevron-left"></span>
+                 <span class="sr-only">Previous</span>
+            </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                 <span class="glyphicon glyphicon-chevron-right"></span>
+                 <span class="sr-only">Next</span>
+             </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ========================
+          ELECTRONICS
+===========================-->
+<div class="row homeCarouselPadding" style="position: relative;top:50px">
+    <div class="col-md-3 col-xs-12">
+        <div class="carouselInfo"> 
+            <div class="row"> 
+                <div class="col-md-6 col-xs-2 col-xs-offset-2">
+                    <h2 class="carouselHeading">MOBILES</h2>
+                </div>
+            
+                <div class="col-md-12 col-md-offset-1 col-sm-2 col-sm-offset-4 col-xs-2  col-xs-offset-2">
+                    <button class="btn btn-primary carouselButton" ui-sref="mobile">View All</button>
+                </div>
+            </div>
+            
+       </div> 
+    </div>
+    <div class="col-md-8 col-xs-12">
+        <div id="electronicsCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item" ng-class="{active:!$index}" ng-repeat="index in loopArray">
+                    <div class="row">
+                        <div ng-repeat="x in products.mobiles.slice(index,index+4)">
+                            <div class="col-md-3 col-xs-3">
+                                <div class="text-center">
+                                    <div class="card">
+                                        <a class="cursorPointer" ng-click="descriptionRedirectMobiles(x.id)"><img class="cardImage" src="{{x.image[0]}}" alt=""></a>
+                                        <div class="card-body">
+                                            <div class="card-title mobileName">
+                                            <a class="cursorPointer">{{x.name}}</a>
+                                         </div>
+                                            <div class="priceFont cursorPointer">{{x.price|currency:"₹"}}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control carouselControlEdit " data-target="#electronicsCarousel" data-slide="prev" style="background:none;width:0">
+                 <span class="glyphicon glyphicon-chevron-left carouselControlIcon leftControl" data-target="#electronicsCarousel"></span>
+                 <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control carouselControlEdit" data-target="#electronicsCarousel" data-slide="next" style="background:none;width:0">
+                 <span class="glyphicon glyphicon-chevron-right carouselControlIcon rightControl" ></span>
+                 <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <hr/>
+    </div>
+</div>
+<!-- =======================
+          FASHION
+=========================-->
+<div class="row" style="position: relative;top:50px">
+    <div class="col-md-3 col-xs-12">
+        <div class="carouselInfo"> 
+            <div class="row"> 
+                <div class="col-md-6 col-xs-2 col-xs-offset-2">
+                    <h2 class="carouselHeading">FASHION</h2>
+                </div>
+            
+                <div class="col-md-12 col-md-offset-1 col-sm-2 col-sm-offset-4 col-xs-2 col-xs-offset-2">
+                    <button class="btn btn-primary carouselButton" ui-sref="fashion">View All</button>
+                </div>
+            </div>
+            
+       </div> 
+    </div>
+    <div class="col-md-8 col-xs-12">
+        <div id="fashionCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item" ng-class="{active:!$index}" ng-repeat="index in loopArray">
+                    <div class="row">
+                        <div ng-repeat="x in products.clothings.slice(index,index+4)">
+                            <div class="col-md-3 col-xs-3">
+                                <div class="text-center">
+                                    <div class="card">
+                                        <a class="cursorPointer" ng-click="descriptionRedirectFashion(x.id)"><img class="cardImage" src="{{x.image[0]}}" alt=""></a>
+                                        <div class="card-body">
+                                            <div class="card-title clothesName">
+                                            <a class="cursorPointer">{{x.name}}</a>
+                                         </div>
+                                            <div class="priceFont cursorPointer">{{x.price|currency:"₹"}}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control carouselControlEdit" data-target="#fashionCarousel" data-slide="prev" style="background:none;width:0">
+                 <span class="glyphicon glyphicon-chevron-left carouselControlIcon leftControl" ></span>
+                 <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control carouselControlEdit" data-target="#fashionCarousel" data-slide="next" style="background:none;width:0">
+                 <span class="glyphicon glyphicon-chevron-right carouselControlIcon rightControl" ></span>
+                 <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <hr/>
+    </div>
+</div>
+<!-- =======================
+          SPORTS
+=========================-->
+<div class="row" style="position: relative;top:50px">
+    <div class="col-md-3">
+        <div class="carouselInfo"> 
+            <div class="row"> 
+                <div class="col-md-6 col-sm-2 col-xs-2 col-xs-offset-2">
+                    <h2 class="carouselHeading">SPORTS</h2>
+                </div>
+            
+                <div class="col-md-12 col-md-offset-1 col-sm-2 col-sm-offset-4 col-xs-2 col-xs-offset-2">
+                    <button class="btn btn-primary carouselButton" ui-sref="sports">View All</button>
+                </div>
+            </div>
+            
+       </div> 
+    </div>
+    <div class="col-md-8 col-xs-12">
+        <div id="sportsCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item" ng-class="{active:!$index}" ng-repeat="index in loopArraySports">
+                    <div class="row">
+                        <div ng-repeat="x in products.sports.slice(index,index+4)">
+                            <div class="col-md-3 col-xs-3">
+                                <div class="text-center">
+                                    <div class="card">
+                                        <a class="cursorPointer" ng-click="descriptionRedirectSports(x.id)"><img class="card-img-top cardImage" src="{{x.image[0]}}" alt=""></a>
+                                        <div class="card-body">
+                                            <div class="card-title sportsName">
+                                            <a>{{x.name}}</a>
+                                         </div>
+                                            <div class="priceFont">{{x.price|currency:"₹"}}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control carouselControlEdit" data-target="#sportsCarousel" data-slide="prev" style="background:none;width:0">
+                 <span class="glyphicon glyphicon-chevron-left carouselControlIcon leftControl" ></span>
+                 <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control carouselControlEdit" data-target="#sportsCarousel" data-slide="next" style="background:none;width:0">
+                 <span class="glyphicon glyphicon-chevron-right carouselControlIcon rightControl" ></span>
+                 <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="row" style="position: relative;top:60px;padding: 20px">
+    <div class="col-md-3 col-xs-4 col-md-offset-2">
+        <img class="adImages" src="assets/img/ads1.jpg">
+    </div>
+
+
+    <div class="col-md-3 col-xs-4">
+        <img class="adImages" src="assets/img/ads2.jpg">
+    </div>
+
+
+    <div class="col-md-3 col-xs-4">
+        <img class="adImages" src="assets/img/ads3.jpg">
+    </div>
+</div> -->

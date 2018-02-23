@@ -1,0 +1,24 @@
+.cardImage{
+
+	height:100%;
+	width: 60%
+}
+
+@media screen and (max-width:500px){
+
+.priceFont{
+
+	font-size: 12px;
+}
+}
+
+.cursorPointer{
+
+	cursor: pointer;
+}
+
+.errorText{
+
+	font-size: 26px;
+	font-weight:bold;
+}

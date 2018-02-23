@@ -1,0 +1,101 @@
+@media only screen and (max-width:500px){
+.uiViewPadding{
+
+	padding-top:20em;
+}
+}
+
+.uiViewPadding{
+
+	padding-top:6em;
+}
+
+.navbarColor{
+
+	background-color: #7487a5;
+}
+/*
+.textColor{
+
+	color:black;
+}*/
+
+.toggleButton{
+
+	float:left;
+}
+
+
+.logo{
+	position: relative;
+	top:-15px;
+	height:50px;
+	width:150px;
+}
+
+
+
+.pageFooter{
+	
+	background-color: #7487a5;
+	padding: 40px;
+	margin-top: 80px
+}
+
+.list-format{
+
+	border: none;
+	background-color: transparent;
+}
+
+.footerDiv{
+
+	height: 194px;
+}
+
+.footer-text{
+
+	color:white;
+	font-size: 12px;
+	margin-top:10px;
+}
+@media only screen and (max-width:500px){}
+.footer-textHeading{
+
+	color:white;
+	font-size: 15px;
+	font-weight: bold;
+}
+}
+.footer-textHeading{
+
+	color:white;
+	font-size: 20px;
+	font-weight: bold;
+}
+.cartIcon{
+
+	/*font-size: 20px;*/
+	
+	color: #363256;
+
+}
+
+@media only screen and (max-width:992px){
+.viewCart{
+
+	margin-left:150px;
+}
+}
+
+@media only screen and (min-width:1200px){
+.viewCart{
+
+	padding-left:1100px;
+}
+}
+.footerServicesImages{
+
+	height:100%;
+	width:100%;
+}

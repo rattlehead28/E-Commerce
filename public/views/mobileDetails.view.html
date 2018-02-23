@@ -1,0 +1,57 @@
+<div class="row">
+    <div class="col-md-2 col-xs-4">
+        <ul style="list-style: none">
+            <li><img ng-click="changeSource(mobileDesc.image[0])" class="previewSmall img-thumbnail cursorPointer" src="{{mobileDesc.image[0]}}"></li>
+            <li><img ng-click="changeSource(mobileDesc.image[1])" class="previewSmall img-thumbnail cursorPointer" src="{{mobileDesc.image[1]}}"></li>
+            <li><img ng-click="changeSource(mobileDesc.image[2])" class="previewSmall img-thumbnail cursorPointer" src="{{mobileDesc.image[2]}}"></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col-xs-4">
+        <img class="img-thumbnail" src="{{mainImage}}">
+        <button class="btn btn-primary" ng-click="cartRedirect(mobileDesc.id)" style="margin: 10px 45px">Add to Cart</button>
+    </div>
+    <div class="col-md-6 col-md-offset-2 col-xs-12 ">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <span class="productDetailsName">{{mobileDesc.name}}</span>
+                <h3>{{mobileDesc.price|currency:"₹"}}</h3>
+            </div>
+            <div class="panel-content" style="padding:10px">
+                <p>{{mobileDesc.desc}}</p>
+                <h3>Technical Specifications</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">Screen : <span class="badge">{{mobileDesc.features.screen}}</span></li>
+                    <li class="list-group-item">Processor : <span class="badge">{{mobileDesc.features.processor}}</span></li>
+                    <li class="list-group-item">Operating System : <span class="badge">{{mobileDesc.features.os}}</span></li>
+                    <li class="list-group-item">Battery : <span class="badge">{{mobileDesc.features.battery}}</span></li>
+                    <li class="list-group-item">Camera : <span class="badge">{{mobileDesc.features.camera}}</span></li>
+                    <li class="list-group-item">RAM : <span class="badge">{{mobileDesc.features.ram}}</span></li>
+                    <li class="list-group-item">ROM : <span class="badge">{{mobileDesc.features.rom}}</span></li>
+                    <li class="list-group-item">Color : <span class="badge">{{mobileDesc.features.color}}</span></li>
+                </ul>
+            </div>
+            <div class="panel-footer">
+                <li class="list-group-item">Warranty : {{mobileDesc.features.warranty}}</li>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row reviewsPadding">
+    <div class="col-md-6 col-xs-12">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h4>Reviews</h4>
+            </div>
+            <div class="panel-content" style="padding:10px">
+            	<h5><b>{{mobileDesc.reviews[0].title}}</b></h5>
+            	<p>{{mobileDesc.reviews[0].comment}}</p><hr/>
+            	<h5><b>{{mobileDesc.reviews[1].title}}</b></h5>
+            	<p>{{mobileDesc.reviews[1].comment}}</p><hr/>
+            	<h5><b>{{mobileDesc.reviews[2].title}}</b></h5>
+            	<p>{{mobileDesc.reviews[2].comment}}</p>
+            </div>
+           
+
+        </div>
+    </div>
+</div>

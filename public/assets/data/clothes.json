@@ -1,0 +1,259 @@
+{
+    "id": "F9",
+    "name": "Polo Neck Yellow T-Shirt",
+    "gender": "male",
+    "brand": "Louis Philippe",
+    "price": 899,
+    "features":
+    {
+        "color": "Yellow",
+        "fabric": "Cotton",
+        "type": "Half Sleeve",
+        "pattern": "Solid"
+
+    },
+    "image": ["assets/img/lp1_1.png", "assets/img/lp1_2.png", "assets/img/lp1_3.png"],
+    "reviews": [
+    {
+        "title": "Terrific",
+        "comment": "great quality,perfect fit,nice color.Exactly like the picture."
+
+    },
+    {
+        "title": "Fabulous",
+        "comment": "Excellent material it’s just like the photos online."
+
+    },
+    {
+        "title": "Nice",
+        "comment": "perfect fit and great quality."
+
+    }]
+
+},
+
+{
+    "id": "F10",
+    "name": "Polo Neck Blue T-Shirt",
+    "gender": "male",
+    "brand": "Louis Philippe",
+    "price": 1499,
+    "features":
+    {
+        "color": "Blue",
+        "fabric": "Cotton Linen Blend",
+        "type": "Half Sleeve",
+        "pattern": "Printed"
+
+    },
+    "image": ["assets/img/lp2_1.png", "assets/img/lp2_2.png", "assets/img/lp2_3.png"],
+    "reviews": [
+    {
+        "title": "Impressive",
+        "comment": "The fabric quality was impressive."
+
+    },
+    {
+        "title": "Pretty",
+        "comment": "beautiful color,pretty design"
+
+    },
+    {
+        "title": "Nice fit",
+        "comment": "perfect fit and great quality."
+
+    }]
+
+},
+
+{
+    "id": "F11",
+    "name": "Louis Philippe Striped Men's Polo Neck T-Shirt",
+    "gender": "male",
+    "brand": "Louis Philippe",
+    "price": 899,
+    "features":
+    {
+        "color": "Dark Green With White",
+        "fabric": "Cotton Linen Blend",
+        "type": "Half Sleeve",
+        "pattern": "Striped"
+
+    },
+    "image": ["assets/img/lp3_1.png", "assets/img/lp3_2.png", "assets/img/lp3_3.png"],
+    "reviews": [
+    {
+        "title": "Simply Awesome",
+        "comment": "Good"
+
+    },
+    {
+        "title": "Super!",
+        "comment": "very happy with the service and quality of fabric!"
+    },
+    {
+        "title": "Great",
+        "comment": "Great quality and perfect fitting"
+    }]
+
+},
+
+{
+    "id": "F12",
+    "name": "Tommy Hilfiger Men's Printed Casual White Shirt",
+    "gender": "male",
+    "brand": "Tommy Hilfiger",
+    "price": 1731,
+    "features":
+    {
+        "color": "White",
+        "fabric": "Cotton",
+        "type": "Full Sleeve",
+        "pattern": "Printed"
+
+    },
+    "image": ["assets/img/th1_1.png", "assets/img/th1_2.png", "assets/img/th1_3.png"],
+    "reviews": [
+    {
+        "title": "Good",
+        "comment": "I love the fitting of this shirt.Thank you for early shipping."
+
+    },
+    {
+        "title": "Great",
+        "comment": "Great quality and perfect fitting"
+    },
+    {
+        "title": "Nice",
+        "comment": "perfect fit and great quality."
+    }]
+
+},
+
+{
+    "id": "F13",
+    "name": "Tommy Hilfiger Men's Solid Casual Grey Shirt",
+    "gender": "male",
+    "brand": "Tommy Hilfiger",
+    "price": 2159,
+    "features":
+    {
+        "color": "Grey",
+        "fabric": "Cotton",
+        "type": "Full Sleeve",
+        "pattern": "Solid"
+
+    },
+    "image": ["assets/img/th2_1.png", "assets/img/th2_2.png", "assets/img/th2_3.png"],
+    "reviews": [
+    {
+        "title": "Great",
+        "comment": "Great addition to wardrobe"
+
+    },
+    {
+        "title": "Good",
+        "comment": "Good quality and early shipping"
+    },
+    {
+        "title": "Amazing",
+        "comment": "amazing fabric and super comfortable"
+    }]
+
+},
+
+{
+    "id": "F14",
+    "name": "Peter England Men's T-Shirt",
+    "gender": "male",
+    "brand": "Peter England",
+    "price": 479,
+    "features":
+    {
+        "color": "Pink With White",
+        "fabric": "Cotton",
+        "type": "Half Sleeve",
+        "pattern": "Striped"
+
+    },
+    "image": ["assets/img/pe1_1.png", "assets/img/pe1_2.png", "assets/img/pe1_3.png"],
+    "reviews": [
+    {
+        "title": "Brilliant",
+        "comment": "Nice Product on price.."
+
+    },
+    {
+        "title": "Awesome",
+        "comment": "Good"
+    },
+    {
+        "title": "Worth every penny",
+        "comment": "Super"
+    }]
+
+},
+
+{
+    "id": "F15",
+    "name": "Peter England Striped Men's Polo Neck Blue T-Shirt",
+    "gender": "male",
+    "brand": "Peter England",
+    "price": 779,
+    "features":
+    {
+        "color": "Medium Blue With Black",
+        "fabric": "Polyester Modal Blend",
+        "type": "Half Sleeve",
+        "pattern": "Striped"
+
+    },
+    "image": ["assets/img/pe2_1.png", "assets/img/pe2_2.png", "assets/img/pe2_3.png"],
+    "reviews": [
+    {
+        "title": "Good",
+        "comment": "Value for money"
+
+    },
+    {
+        "title": "Excellent",
+        "comment": "Good quality and service"
+    },
+    {
+        "title": "Nice Product",
+        "comment": "comfortable to wear"
+    }]
+
+},
+
+{
+    "id": "F16",
+    "name": "Peter England Solid Men's Polo Neck Black T-Shirt",
+    "gender": "male",
+    "brand": "Peter England",
+    "price": 999,
+    "features":
+    {
+        "color": "Light Grey With Black",
+        "fabric": "Cotton",
+        "type": "Half Sleeve",
+        "pattern": "Solid"
+
+    },
+    "image": ["assets/img/pe3_1.png", "assets/img/pe3_2.png", "assets/img/pe3_3.png"],
+    "reviews": [
+    {
+        "title": "Worth the money",
+        "comment": "Good quality...."
+
+    },
+    {
+        "title": "Unsatisfactory",
+        "comment": "Devalue for money !"
+    },
+    {
+        "title": "Terrific purchase",
+        "comment": "Very comfortable T shirt , very good service"
+    }]
+
+}
