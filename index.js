@@ -1,8 +1,8 @@
-var express = require('express');
+'use strict';
+var express = require('express')
 var app = express();
-var path = require('path');
-var filepath = path.join(__dirname,'public')
-app.use(express.static(filepath));
-app.listen(3000,function(){
-	console.log('server connected');
-});
+app.set('port',(process.env.PORT||5000));
+app.use(express.static('public'))
+app.listen(app.get('port'),function(){
+console.log('app started')
+})
