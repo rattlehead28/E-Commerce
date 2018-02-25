@@ -1,7 +1,7 @@
 .cardImage{
 
 	height:100%;
-	width: 60%
+	width: 70%
 }
 
 @media screen and (max-width:500px){
@@ -22,3 +22,37 @@
 	font-size: 26px;
 	font-weight:bold;
 }
+
+.removeBorder{
+
+	border:none;
+}
+
+.panelHeight{
+
+	height:255px;
+}
+
+.listItem{
+
+	padding:10px;
+}
+
+.priceFont{
+
+	font-size: 12px;
+	font-weight:bold;
+	padding-top: 5px;
+}
+
+.headingFont{
+
+	font-size: 15px;
+	font-weight: bold;	
+}
+
+.listStyle{
+
+	list-style: none;
+}
+

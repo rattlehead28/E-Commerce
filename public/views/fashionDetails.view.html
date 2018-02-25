@@ -16,7 +16,7 @@
                 <h1>{{clothingsDesc.name}}</h1>
                 <h3>{{clothingsDesc.price|currency:"₹"}}</h3>
             </div>
-            <div class="panel-content" style="padding:10px">
+            <!-- <div class="panel-content" style="padding:10px">
                 <p>{{clothingsDesc.desc}}</p>
                 <h3>Features</h3>
                 <ul class="list-group">
@@ -24,6 +24,48 @@
                     <li class="list-group-item">Fabric : <span class="badge">{{clothingsDesc.features.fabric}}</span></li>
                     <li class="list-group-item">Type : <span class="badge">{{clothingsDesc.features.type}}</span></li>
                     <li class="list-group-item">Pattern : <span class="badge">{{clothingsDesc.features.pattern}}</span></li>
+                    
+                </ul>
+            </div> -->
+
+            <div class="panel-content" style="padding:10px">
+                <p>{{clothingsDesc.desc}}</p>
+                <li class="list-group-item offersList"><i class="glyphicon glyphicon-tag"></i>  <span>{{products.offers[0]}}</span></li>
+                <li class="list-group-item offersList"><i class="glyphicon glyphicon-tag"></i>  <span>{{products.offers[1]}}</span></li>
+                <li class="list-group-item offersList"><i class="glyphicon glyphicon-tag"></i>  <span>{{products.offers[2]}}</span></li>
+                <h3>Features</h3>
+                <ul class="list-group">
+                    <div class="row">
+                        <div class="col-md-4 productFeatures">
+                            Color : </div>
+                        <div class="col-md-8">
+                            <li class="list-group-item specificationContent"><span>{{clothingsDesc.features.color}}</span></li>
+                        </div>
+                    </div>
+                    <div class="row rowPadding">
+                        <div class="col-md-4 productFeatures">
+                            Fabric : </div>
+                        <div class="col-md-8">
+                            <li class="list-group-item specificationContent"><span>{{clothingsDesc.features.fabric}}</span></li>
+                        </div>
+                    </div>
+                    <div class="row rowPadding">
+                        <div class="col-md-4 productFeatures">
+                            Type :</div>
+                        <div class="col-md-8">
+                            <li class="list-group-item specificationContent"><span>{{clothingsDesc.features.type}}</span></li>
+                        </div>
+                    </div>
+                    <div class="row rowPadding">
+                        <div class="col-md-4 productFeatures">
+                            Pattern :</div>
+                        <div class="col-md-8">
+                            <li class="list-group-item specificationContent"><span>{{clothingsDesc.features.pattern}}</span></li>
+                        </div>
+                    </div>
+                    
+                    
+                    
                     
                 </ul>
             </div>

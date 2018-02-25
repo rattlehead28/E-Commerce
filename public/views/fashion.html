@@ -28,7 +28,7 @@
             <rzslider rz-slider-model="minRangeSlider.minValue" rz-slider-high="minRangeSlider.maxValue" rz-slider-options="minRangeSlider.options"></rzslider>
         </div>
     </div>
-    <div class="col-md-10 col-sm-10">
+    <!-- <div class="col-md-10 col-sm-10">
         <div class="row">
             <div ng-repeat="x in filteredClothes | genderFilter:val | filter:priceFilter">
                 <div class="col-md-3 col-sm-3 col-xs-4">
@@ -44,7 +44,43 @@
                 </div>
             </div>
         </div>
+    </div> -->
+
+    <!-- ============================================-->
+
+    <div class="col-md-10 col-sm-10">
+        <div class="row">
+            <div div ng-repeat="x in filteredClothes | genderFilter:val | filter:priceFilter">
+                <div class="col-md-6 col-sm-3 col-xs-12">
+                    <div class="panel panel-default panelHeight">
+                        <div class="row">
+                            <div class="col-md-4 col-md-offset-1 col-xs-4 col-xs-offset-1" style="padding-top:10%">
+                        <a ng-click="descriptionRedirect(x.id)" class="cursorPointer "><img class="cardImage" src="{{x.image[0]}}" alt=""></a>
+                    </div>
+                    <div class="col-md-6 col-md-offset-1 col-xs-7 ">
+                        <div class="panel-content">
+                            <div class="panel-heading">
+                                
+                                <a ng-click="descriptionRedirect(x.id)" class="cursorPointer headingFont">{{x.name}}</a>
+                                <div class="priceFont cursorPointer" ng-click="descriptionRedirect(x.id)">{{x.price|currency:"₹"}}</div>
+                            </div>
+                            <ul>
+                            
+                            <li class="listItem">{{x.features.color}}</li>
+                            <li class="listItem">{{x.features.fabric}}</li>
+                            
+                            <li class="listItem">{{x.features.pattern}}</li>
+                        </ul>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <!-- ===================================================-->
 
     <div class="col-md-5 col-md-offset-3 col-sm-5 col-sm-offset-3" ng-show="(filteredClothes | genderFilter:val | filter:priceFilter).length==0">
     
