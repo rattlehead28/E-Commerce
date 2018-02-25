@@ -1,17 +1,17 @@
 <div class="row">
 
-    <div class="col-md-2 col-xs-4">
+    <div class="col-md-2 col-sm-2 col-xs-4">
         <ul style="list-style: none">
             <li><img ng-click="changeSource(mobileDesc.image[0])" class="previewSmall img-thumbnail cursorPointer" src="{{mobileDesc.image[0]}}"></li>
             <li><img ng-click="changeSource(mobileDesc.image[1])" class="previewSmall img-thumbnail cursorPointer" src="{{mobileDesc.image[1]}}"></li>
             <li><img ng-click="changeSource(mobileDesc.image[2])" class="previewSmall img-thumbnail cursorPointer" src="{{mobileDesc.image[2]}}"></li>
         </ul>
     </div>
-    <div class="col-md-2 col-xs-4">
+    <div class="col-md-2 col-sm-2 col-xs-4">
         <img class="img-thumbnail" src="{{mainImage}}">
         <button class="btn btn-primary addCart" ng-click="cartRedirect(mobileDesc.id)">Add to Cart</button>
     </div>
-    <div class="col-md-6 col-md-offset-2 col-xs-12 ">
+    <div class="col-md-6 col-md-offset-2 col-sm-6 col-sm-offset-2 col-xs-12 ">
         <div class="panel panel-info">
             <div class="panel-heading">
                 <span class="productDetailsName">{{mobileDesc.name}}</span>
@@ -25,23 +25,23 @@
                 <h3>Technical Specifications</h3>
                 <ul class="list-group">
                     <div class="row">
-                        <div class="col-md-4 productFeatures">
+                        <div class="col-md-4 col-sm-4 productFeatures">
                             Screen : </div>
-                        <div class="col-md-8">
+                        <div class="col-md-8 col-sm-8">
                             <li class="list-group-item specificationContent"><span>{{mobileDesc.features.screen}}</span></li>
                         </div>
                     </div>
                     <div class="row rowPadding">
-                        <div class="col-md-4 productFeatures">
+                        <div class="col-md-4 col-sm-4 productFeatures">
                             Processor : </div>
-                        <div class="col-md-8">
+                        <div class="col-md-8 col-sm-8">
                             <li class="list-group-item specificationContent"><span>{{mobileDesc.features.processor}}</span></li>
                         </div>
                     </div>
                     <div class="row rowPadding">
-                        <div class="col-md-4 productFeatures">
+                        <div class="col-md-4 col-sm-4 productFeatures">
                             Operating System:</div>
-                        <div class="col-md-8">
+                        <div class="col-md-8 col-sm-8">
                             <li class="list-group-item specificationContent"><span>{{mobileDesc.features.os}}</span></li>
                         </div>
                     </div>
@@ -53,33 +53,33 @@
                         </div>
                     </div>
                     <div class="row rowPadding">
-                        <div class="col-md-4 productFeatures">
+                        <div class="col-md-4 col-sm-4 productFeatures">
                             Camera :
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-8 col-sm-8">
                             <li class="list-group-item specificationContent"><span>{{mobileDesc.features.camera}}</span></li>
                         </div>
                     </div>
                     <div class="row rowPadding">
-                        <div class="col-md-4 productFeatures">
+                        <div class="col-md-4 col-sm-4 productFeatures">
                             RAM : </div>
-                        <div class="col-md-8">
+                        <div class="col-md-8 col-sm-8">
                             <li class="list-group-item specificationContent"><span>{{mobileDesc.features.ram}}</span></li>
                         </div>
                     </div>
                     <div class="row rowPadding">
-                        <div class="col-md-4 productFeatures">
+                        <div class="col-md-4 col-sm-4 productFeatures">
                             ROM :
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-8 col-sm-8">
                             <li class="list-group-item specificationContent"><span>{{mobileDesc.features.rom}}</span></li>
                         </div>
                     </div>
                     <div class="row rowPadding">
-                        <div class="col-md-4 productFeatures">
+                        <div class="col-md-4 col-sm-4 productFeatures">
                             Color :
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-8 col-sm-8">
                             <li class="list-group-item specificationContent"><span>{{mobileDesc.features.color}}</span></li>
                         </div>
                     </div>
@@ -87,10 +87,10 @@
             </div>
             <div class="panel-footer">
                 <div class="row">
-                    <div class="col-md-4 productFeatures">
+                    <div class="col-md-4 col-sm-4 productFeatures">
                         Warranty :
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-8 col-sm-8">
                         <li class="list-group-item specificationContent">{{mobileDesc.features.warranty}}</li>
                     </div>
                 </div>

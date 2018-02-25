@@ -6,9 +6,9 @@
             <li><img ng-click="changeSource(clothingsDesc.image[2])" class="previewSmall img-thumbnail cursorPointer" src="{{clothingsDesc.image[2]}}"></li>
         </ul>
     </div>
-    <div class="col-md-2 col-xs-4">
+    <div class="col-md-2 col-sm-2 col-xs-4">
         <img class="img-thumbnail" src="{{mainImage}}">
-         <button class="btn btn-primary" style="margin: 10px 45px" ng-click="cartRedirect(clothingsDesc.id)">Add to Cart</button>
+         <button class="btn btn-primary" ng-click="cartRedirect(clothingsDesc.id)">Add to Cart</button>
     </div>
     <div class="col-md-6 col-md-offset-2 col-xs-12">
         <div class="panel panel-info">

@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="col-md-2">
+    <div class="col-md-2 col-xs-4">
         <ul style="list-style: none">
             <li><img ng-click="changeSource(sportsDesc.image[0])" class="previewSmall img-thumbnail cursorPointer" src="{{sportsDesc.image[0]}}"></li>
             <li><img ng-click="changeSource(sportsDesc.image[1])" class="previewSmall img-thumbnail cursorPointer" src="{{sportsDesc.image[1]}}"></li>
@@ -7,8 +7,8 @@
         </ul>
     </div>
     <div class="col-md-2">
-        <img class="img-thumbnail" src="{{mainImage}}">
-         <button class="btn btn-primary" style="margin: 10px 45px" ng-click="cartRedirect(sportsDesc.id)">Add to Cart</button>
+        <img class="img-thumbnail" src="{{mainImage}}" style="height:20%;width: 40%">
+         <button class="btn btn-primary" ng-click="cartRedirect(sportsDesc.id)">Add to Cart</button>
     </div>
     <div class="col-md-6 col-md-offset-2">
         <div class="panel panel-info">
@@ -16,7 +16,7 @@
                 <span class="productDetailsName">{{sportsDesc.name}}</span>
                 <h3>{{sportsDesc.price|currency:"₹"}}</h3>
             </div>
-            <div class="panel-content" style="padding:10px">
+            <!-- <div class="panel-content" style="padding:10px">
                 <p>{{sportsDesc.desc}}</p>
                 <h3>Features</h3>
                 <ul class="list-group">
@@ -26,7 +26,46 @@
                     
                     
                 </ul>
+            </div> -->
+<!-- ======================================-->
+
+<div class="panel-content" style="padding:10px">
+                <p>{{sportsDesc.desc}}</p>
+                <li class="list-group-item offersList"><i class="glyphicon glyphicon-tag text-success"></i>  <span>{{products.offers[0]}}</span></li>
+                <li class="list-group-item offersList"><i class="glyphicon glyphicon-tag text-success"></i>  <span>{{products.offers[1]}}</span></li>
+                <li class="list-group-item offersList"><i class="glyphicon glyphicon-tag text-success"></i>  <span>{{products.offers[2]}}</span></li>
+                <h3>Features</h3>
+                <ul class="list-group">
+                    <div class="row">
+                        <div class="col-md-4 productFeatures">
+                            Material : </div>
+                        <div class="col-md-8">
+                            <li class="list-group-item specificationContent"><span>{{sportsDesc.features.material}}</span></li>
+                        </div>
+                    </div>
+                    <div class="row rowPadding">
+                        <div class="col-md-4 productFeatures">
+                            Color : </div>
+                        <div class="col-md-8">
+                            <li class="list-group-item specificationContent"><span>{{sportsDesc.features.color}}</span></li>
+                        </div>
+                    </div>
+                    <div class="row rowPadding">
+                        <div class="col-md-4 productFeatures">
+                            Weight :</div>
+                        <div class="col-md-8">
+                            <li class="list-group-item specificationContent"><span>{{sportsDesc.features.weight}}</span></li>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                </ul>
             </div>
+
+    <!-- =================================-->        
             
         </div>
     </div>
