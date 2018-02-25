@@ -20,13 +20,14 @@
                 </div>
                 <div class="row" style="margin-top: 10px">
                     <div class="col-md-1 col-sm-1 col-xs-1">
-                        <button class="btn btn-default editButton" ng-click="increaseCount(x.id)">+</button>
+                        <button class="btn btn-default editButton" ng-click="decreaseCount(x.id)">-</button>
                     </div>
                     <div class="col-md-2 col-md-offset-0 col-sm-2 col-sm-offset-0 col-xs-4 col-xs-offset-1">
                         <input class="form-control text-center" type="text" ng-model="cartProductId[x.id].count">
                     </div>
                     <div class="col-md-1 col-sm-1 col-xs-1">
-                        <button class="btn btn-default editButton" ng-click="decreaseCount(x.id)">-</button>
+                        <button class="btn btn-default editButton" ng-click="increaseCount(x.id)">+</button>
+                        
                     </div>
                     <!-- <div class="col-md-2 col-md-offset-2 col-sm-2 col-sm-offset-2 col-xs-5 ">
                         <button class="btn btn-success" ui-sref='home'>Continue Shopping</button>

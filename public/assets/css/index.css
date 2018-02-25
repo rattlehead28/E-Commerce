@@ -100,3 +100,8 @@
 	height:100%;
 	width:100%;
 }
+
+.removePadding{
+	margin-right: 0px;
+	margin-left: 0px;
+}

@@ -25,3 +25,19 @@
 }
 }
 
+@media screen and (min-width:992px){
+
+	.addCart{
+
+		margin: 10px 45px;
+	}
+}
+
+@media screen and (max-width:992px){
+
+	.addCart{
+
+		margin: 5px 0px 5px -4px;
+	}
+}
+
