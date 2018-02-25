@@ -41,3 +41,28 @@
 	}
 }
 
+.rowPadding{
+
+	padding-top:10px;
+}
+
+.specificationContent{
+
+	background-color: #d9edf7;
+	border-color: #bce8f1;
+	color: #31708f;
+}
+
+.productFeatures{
+
+	padding-top: 10px;
+	color: #31708f;
+	font-weight: bold;
+}
+
+.offersList{
+
+	border:none;
+}
+
+
