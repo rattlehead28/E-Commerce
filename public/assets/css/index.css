@@ -27,11 +27,12 @@
 }
 
 
+
 .logo{
 	position: relative;
-	top:-15px;
-	height:50px;
-	width:150px;
+	top:-10px;
+	height:40px;
+	width:120px;
 }
 
 
@@ -104,4 +105,9 @@
 .removePadding{
 	margin-right: 0px;
 	margin-left: 0px;
+}
+
+.headerWidth{
+
+	width:200px;
 }
