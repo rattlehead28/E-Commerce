@@ -1,4 +1,4 @@
-@media screen and (min-width:500px){
+@media screen and (min-width:600px){
 
 .productName{
 
@@ -6,7 +6,7 @@
 }
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:600px){
 
 .priceFont{
 
@@ -29,7 +29,7 @@
 	margin-top:10px;
 	margin-left: 30px;
 }
-@media screen and (min-width: 500px){
+@media screen and (min-width: 992px){
 .carouselInfo{
 
 	margin-top:100px;
@@ -128,7 +128,7 @@
 	}
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 600px){
 
 	.mobileName{
 
@@ -146,7 +146,11 @@
 }
 }
 
-@media only screen and (min-width: 500px){
+
+
+
+
+@media only screen and (min-width: 600px){
 
 	.mobileName{
 	padding-top:15px;

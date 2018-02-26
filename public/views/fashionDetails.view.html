@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="col-md-2 col-xs-4">
+    <div class="col-md-2 col-sm-2 col-xs-4">
         <ul style="list-style: none">
             <li><img ng-click="changeSource(clothingsDesc.image[0])" class="previewSmall img-thumbnail cursorPointer" src="{{clothingsDesc.image[0]}}"></li>
             <li><img ng-click="changeSource(clothingsDesc.image[1])" class="previewSmall img-thumbnail cursorPointer" src="{{clothingsDesc.image[1]}}"></li>
@@ -10,7 +10,7 @@
         <img class="img-thumbnail" src="{{mainImage}}">
          <button class="btn btn-primary" ng-click="cartRedirect(clothingsDesc.id)">Add to Cart</button>
     </div>
-    <div class="col-md-6 col-md-offset-2 col-xs-12">
+    <div class="col-md-6 col-md-offset-2 col-sm-6 col-sm-offset-2 col-xs-12">
         <div class="panel panel-info">
             <div class="panel-heading">
                 <span class="productDetailsName">{{clothingsDesc.name}}</h1>
@@ -36,30 +36,30 @@
                 <h3>Features</h3>
                 <ul class="list-group">
                     <div class="row">
-                        <div class="col-md-4 productFeatures">
+                        <div class="col-md-4 col-sm-4 productFeatures">
                             Color : </div>
                         <div class="col-md-8">
                             <li class="list-group-item specificationContent"><span>{{clothingsDesc.features.color}}</span></li>
                         </div>
                     </div>
                     <div class="row rowPadding">
-                        <div class="col-md-4 productFeatures">
+                        <div class="col-md-4 col-sm-4 productFeatures">
                             Fabric : </div>
-                        <div class="col-md-8">
+                        <div class="col-md-8 col-sm-8">
                             <li class="list-group-item specificationContent"><span>{{clothingsDesc.features.fabric}}</span></li>
                         </div>
                     </div>
                     <div class="row rowPadding">
-                        <div class="col-md-4 productFeatures">
+                        <div class="col-md-4 col-sm-4 productFeatures">
                             Type :</div>
-                        <div class="col-md-8">
+                        <div class="col-md-8 col-sm-8">
                             <li class="list-group-item specificationContent"><span>{{clothingsDesc.features.type}}</span></li>
                         </div>
                     </div>
                     <div class="row rowPadding">
-                        <div class="col-md-4 productFeatures">
+                        <div class="col-md-4 col-sm-4 productFeatures">
                             Pattern :</div>
-                        <div class="col-md-8">
+                        <div class="col-md-8 col-sm-8">
                             <li class="list-group-item specificationContent"><span>{{clothingsDesc.features.pattern}}</span></li>
                         </div>
                     </div>
