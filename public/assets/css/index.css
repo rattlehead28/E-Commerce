@@ -52,21 +52,27 @@
 
 .footerDiv{
 
-	height: 194px;
+	height: 207px;
 }
 
 .footer-text{
 
 	color:white;
-	font-size: 12px;
+	font-size: 15px;
 	margin-top:10px;
 }
-@media only screen and (max-width:500px){}
+@media only screen and (max-width:500px){
 .footer-textHeading{
 
 	color:white;
 	font-size: 15px;
 	font-weight: bold;
+}
+
+.footerServicesImages{
+	padding-top: 20px;
+	height:50%;
+	width: 50%
 }
 }
 .footer-textHeading{

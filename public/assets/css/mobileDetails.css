@@ -4,6 +4,15 @@
 	width: 50%
 }
 
+@media screen and (min-width:700px) and (max-width:992px){
+
+	.previewSmall{
+
+	height:80%;
+	width: 80%
+}
+}
+
 .productDetailsName{
 
 	font-size: 30px;
@@ -38,7 +47,7 @@
 
 	.addCart{
 
-		margin: 5px 0px 5px -4px;
+		margin: 5px 0px 10px 50px;
 	}
 }
 
