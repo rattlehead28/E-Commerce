@@ -43,12 +43,22 @@
 	}
 }
 
-@media screen and (max-width:992px){
+@media screen and (min-width:600px) and (max-width:992px){
 
 	.addCart{
 
-		margin: 5px 0px 10px 50px;
+		margin: 5px 0px 10px 40px;
 	}
+}
+
+@media screen and (max-width:500px){
+
+
+	.addCart{
+
+		margin: 5px 0px 5px -4px;
+	}
+
 }
 
 .rowPadding{
